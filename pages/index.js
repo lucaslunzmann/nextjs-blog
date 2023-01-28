@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
       <section className={utilStyles.headingMd}>
       <br></br>
-        <p>Hey! My name is <b>Lucas Lunzmann</b> and I am Business Development Associate at <a href="https://datafeel.com/">DataFeel®</a> in Omaha, NE.</p>
+        <p>Hey! My name is <b>Lucas Lunzmann</b> and I am a Business Development Associate at <a href="https://datafeel.com/">DataFeel®</a> in Omaha, NE.</p>
         <br></br>
         <p>This is my very first Next.js web app and I seriously could not be more excited! This basic little page is such a meanigful win for me. This is the outcome of months and months of learning, failing, and creating a daily habit of coding.</p>
         <br></br>
