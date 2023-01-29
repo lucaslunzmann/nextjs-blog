@@ -25,18 +25,20 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header>
         {home ? (
           <>
-            <Image
+            <Image class="m-auto rounded-full drop-shadow-2xl"
               priority
               src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={200}
+              width={200}
               alt=""
+
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <br></br><br></br>
+            <h2 class="font-sans text-center text-lg uppercase tracking-widest">Welcome to my page</h2>
+            <h1 className="text-left text-center font-sans font-bold text-6xl text-blue-600">{name}</h1>
           </>
         ) : (
           <>
@@ -44,7 +46,7 @@ export default function Layout({ children, home }) {
               <Image
                 priority
                 src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
+                className={utilSyles.borderCircle}
                 height={108}
                 width={108}
                 alt=""

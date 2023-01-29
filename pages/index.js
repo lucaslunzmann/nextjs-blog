@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
 
 export default function Home() {
   return (
@@ -10,15 +9,16 @@ export default function Home() {
       </Head>
       <br></br>
       <section className="font-sans text-lg">
-        <p>Hey! My name is <b>Lucas Lunzmann</b> and I am a Business Development Associate at <u><a class="hover:text-blue-600" href="https://datafeel.com/">DataFeel®</a></u> in Omaha, NE.
+        <p>I am a proud Creighton University bluejay and Scott Scholar. I plan to major in FinTech and minor in Computer Science.
+          I work as a Business Development Associate at <u><a class="hover:text-blue-600" href="https://datafeel.com/">DataFeel®</a></u> - a tech startup right here in Omaha, Nebraska!
         <br></br><br></br>
-        This is my very first Next.js web app and I seriously could not be more excited! This basic little page is such a meanigful win for me. This is the outcome of months and months of learning, failing, and creating a daily habit of coding.
+          Outside of work and school you can find me running a PPL split at the gym, with my head deep in code, or at the nearest Chipotle.
         <br></br><br></br>
-        I feel like the floodgates have opened - we have crossed off a major barrier of entry. It's just a matter of time before we start shipping. 🚢
+          Humility + Curiosity.
         </p>
       </section>
-        <br></br><br></br>
-        <h3 class="font-sans uppercase text-lg text-center">Always Learning</h3>
+        <br></br><br></br><br></br>
+        <h3 class="font-sans uppercase text-lg text-center tracking-widest">Always Learning</h3>
         <h2 className= "text-center text-5xl text-blue-600 font-bold">
           Value-Add Skills</h2>
         <p> <br></br>
