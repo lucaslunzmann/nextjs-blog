@@ -22,12 +22,12 @@ export default function Home() {
         <h2 className= "text-center text-5xl text-blue-600 font-bold">
           Value-Add Skills</h2>
         <p> <br></br>
-          <table class="m-auto">
-            <tr><td>1.</td><td>Notion</td></tr>
-            <tr><td>2.</td><td>Canva</td></tr>
-            <tr><td>3.</td><td>WordPress</td></tr>
-            <tr><td>4.</td><td>Next.js</td></tr>
-            <tr><td>5.</td><td>Copywriting</td></tr>
+          <table class="font-sans text-lg m-auto">
+            <tr><td>1.</td><td> Notion</td></tr>
+            <tr><td>2.</td><td> Canva</td></tr>
+            <tr><td>3.</td><td> WordPress</td></tr>
+            <tr><td>4.</td><td> Next.js</td></tr>
+            <tr><td>5.</td><td> Copywriting</td></tr>
           </table>
         </p>
     </Layout>
