@@ -42,18 +42,17 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
+            <Link class="m-auto rounded-full drop-shadow-2xl" href="/">
               <Image
                 priority
                 src="/images/profile.jpg"
-                className={utilSyles.borderCircle}
                 height={108}
                 width={108}
                 alt=""
               />
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
+            <h2 className="text-center text-5xl text-blue-600 font-bold">
+              <Link href="/">
                 {name}
               </Link>
             </h2>
@@ -62,7 +61,7 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className="text-blue-600 font-bold">
           <Link href="/">← Back to home</Link>
         </div>
       )}

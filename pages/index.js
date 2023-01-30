@@ -7,8 +7,19 @@ import { DiPhotoshop } from 'react-icons/di';
 import { SiCanva } from 'react-icons/si';
 import { SiNextdotjs } from 'react-icons/si';
 import { SiNotion } from 'react-icons/si';
+import Link from 'next/link';
+import Date from '../components/date';
+import { getSortedPostsData } from '../lib/posts';
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+export default function Home({ allPostsData}) {
   return (
     <Layout home>
       <Head>
@@ -77,6 +88,22 @@ export default function Home() {
     </div>
   </div>
 </div>
+<br></br><br></br><br></br><br></br><br></br>
+<section>
+  <h3 class="font-sans uppercase text-lg text-center tracking-widest">Read my thoughts</h3>
+        <h2 className= "text-center text-5xl text-blue-600 font-bold">Writing Collection</h2>
+          <br></br><br></br>
+          {allPostsData.map(({ id, date, title }) => (
+            <li className= "w-1/2 font-sans text-lg mb-8 list-none container mx-auto bg-white rounded-lg px-4 py-6 ring-1 ring-slate-900/5 shadow-md hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-150 duration-500"key={id}>
+              <Link className="text-blue-600 font-semibold hover:underline" href={`/posts/${id}`}>{title}</Link>
+              <br />
+              <small>
+                <Date className="font-sans"dateString={date} />
+              </small>
+            </li>
+          ))}
+</section>
+
     </Layout>
   );
-}
+};
