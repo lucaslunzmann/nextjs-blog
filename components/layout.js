@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Lucas Lunzmann';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = "Lucas's Landing Page";
 
 export default function Layout({ children, home }) {
   return (
@@ -38,33 +38,29 @@ export default function Layout({ children, home }) {
             />
             <br></br><br></br>
             <h2 class="font-sans text-center text-lg uppercase tracking-widest">Welcome to my page</h2>
-            <h1 className="text-left text-center font-sans font-bold text-6xl text-blue-600">{name}</h1>
+            <h1 className="text-center font-sans font-bold text-6xl text-zinc-800">{name}</h1>
           </>
         ) : (
           <>
-            <Link class="m-auto rounded-full drop-shadow-2xl" href="/">
-              <Image
+            <Link href="/">
+              <Image class="m-auto rounded-full drop-shadow-2xl"
                 priority
                 src="/images/profile.jpg"
-                height={108}
-                width={108}
+                height={150}
+                width={150}
                 alt=""
               />
             </Link>
-            <h2 className="text-center text-5xl text-blue-600 font-bold">
-              <Link href="/">
-                {name}
-              </Link>
-            </h2>
+            
           </>
         )}
       </header>
       <main>{children}</main>
       {!home && (
-        <div className="text-blue-600 font-bold">
+        <div className="text-blue-600 text-center font-bold">
           <Link href="/">← Back to home</Link>
         </div>
       )}
     </div>
   );
-}
+      }
