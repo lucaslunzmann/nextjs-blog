@@ -3,6 +3,8 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import { motion, whileHover, drag, whileTap } from "framer-motion"
+
 
 const name = 'Lucas Lunzmann';
 export const siteTitle = "Lucas's Landing Page";
@@ -29,14 +31,19 @@ export default function Layout({ children, home }) {
       <header>
         {home ? (
           <>
-            <Image class="m-auto rounded-full drop-shadow-2xl"
+          <div>
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.3 }}>
+            <Image class="m-auto rounded-full drop-shadow-2xl hover:shadow-xl hover:shadow-indigo-300/100"
               priority
               src="/images/profile.jpg"
               height={200}
               width={200}
               alt=""
+            /></motion.div>
 
-            />
+            </div>
             <br></br><br></br>
             <h2 class="font-sans text-center text-lg uppercase tracking-widest">Welcome to my page</h2>
             <h1 className="text-center font-sans font-bold text-6xl text-zinc-800">{name}</h1>

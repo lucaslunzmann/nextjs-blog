@@ -8,7 +8,7 @@ import { SiCanva } from 'react-icons/si';
 import { SiNextdotjs } from 'react-icons/si';
 import { SiNotion } from 'react-icons/si';
 import Link from 'next/link';
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 
 
 export default function Home({ allPostsData}) {
@@ -100,13 +100,18 @@ export default function Home({ allPostsData}) {
             <span className= "text-5xl bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 via-cyan-500 to-indigo-500 font-bold">
           Writing Collection</span>
           </h2>          <br></br><br></br>
-            <li className= "hover:shadow-lg hover:shadow-indigo-300/50 w-1/2 font-sans text-lg mb-8 list-none container mx-auto bg-white rounded-lg px-4 py-6 ring-1 ring-slate-900/5 shadow-md hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-150 duration-500">
+
+            <li id="Blog" className= "hover:shadow-lg hover:shadow-indigo-300/50 w-1/2 font-sans text-lg mb-8 list-none container mx-auto bg-white rounded-lg px-4 py-6 ring-1 ring-slate-900/5 shadow-md hover:-translate-y-1 hover:scale-105 transition ease-in-out delay-150 duration-500">
               <Link className="text-blue-600 font-semibold hover:underline" href="/first">New Blog</Link>
               <br></br>
               <small>
               </small>
             </li>
+        
 </section><br></br><br></br>
+
+
+
 
 
     </Layout>
