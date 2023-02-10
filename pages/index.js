@@ -8,6 +8,7 @@ import { SiCanva } from 'react-icons/si';
 import { SiNextdotjs } from 'react-icons/si';
 import { SiNotion } from 'react-icons/si';
 import Link from 'next/link';
+import { motion } from "framer-motion"
 
 
 export default function Home({ allPostsData}) {
@@ -35,7 +36,7 @@ export default function Home({ allPostsData}) {
         <h3 class="font-sans uppercase text-lg text-center tracking-widest">Always Learning</h3>
           <h2 className="text-center">
             <span className= "text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-fuchsia-500 to-orange-500 font-bold">
-          Value-Add Skills</span>
+          Value-Added Skills</span>
           </h2>
         <br></br><br></br>
       </div>
@@ -106,6 +107,7 @@ export default function Home({ allPostsData}) {
               </small>
             </li>
 </section><br></br><br></br>
+
 
     </Layout>
   );
